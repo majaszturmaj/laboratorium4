@@ -15,6 +15,10 @@ elif [[ "$1" = '--logs' -o "$1" = '-l' ]]; then
 	 var=$(date)
 	 echo "log$i data.sh $var" >> log$i.txt
   done
+elif [[ "$1" = '--init' ]]; then
+  git clone https://github.com/majaszturmaj/laboratorium4
+  currentDir=$(pwd)
+  export PATH=$PATH:"$currentDir"
 else [[ "$1" = '--date' -o "$1" = '-d' ]]; then
   date
 fi
