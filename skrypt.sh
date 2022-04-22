@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 if [[ "$1" = '--help' -o "$1" = '-h' ]]; then
-  echo "--date : wyświetli dzisiejszą datę"
-  echo "--logs : utworzy 100 plików tekstowych"
-  echo "--logs 30 : utworzy 30 plików tekstowych"
-  echo "--help : wyświetli dostępne opcje"
+  echo "--date / -d : wyświetli dzisiejszą datę"
+  echo "--logs / -l : utworzy 100 plików tekstowych"
+  echo "--logs 30 / -l 30 : utworzy 30 plików tekstowych"
+  echo "--help / -h : wyświetli dostępne opcje"
 elif [[ "$1" = '--logs' -a "$2" = '30' || "$1" = '-l' -a "$2" = '30' ]]; then
   for ((i = 1 ; i < 31 ; i++)); do
 	 var=$(date)
