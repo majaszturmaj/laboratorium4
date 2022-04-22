@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-if [[ "$1" = '--logs' -a "$2" = '30' ]]; then
-  for ((i = 1 ; i < 31 ; i++)); do
-	 var=$(date)
-	 echo "log$i data.sh $var" >> log$i.txt
-  done
+if [[ "$1" = '--help' ]]; then
+  echo "--date : wyświetli dzisiejszą datę"
+  echo "--logs : utworzy 100 plików tekstowych"
+  echo "--logs 30 : utworzy 30 plików tekstowych"
+  echo "--help : wyświetli dostępne opcje"
 fi
